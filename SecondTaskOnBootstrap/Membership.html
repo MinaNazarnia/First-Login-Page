@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Membership</title>
+    <link rel="icon" href="favicon-32x32.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-white m-0 p-2 pb-3 border-bottom shadow-sm navbar-light">
+            <div class="container-fluid align-items-baseline">
+                <a class="navbar-brand" href="Membership.html">France Spactacle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-end">
+                    <div class="collapse navbar-collapse px-2" id="collapsibleNavbar">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown pe-2">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Membership</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Free</a></li>
+                                    <li><a class="dropdown-item" href="#">Pro</a></li>
+                                    <li><a class="dropdown-item" href="#">Enterprise</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <a class="nav-link" onclick="userList();" href="">Enterprise</a>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item pe-2">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-outline-danger " onclick="logout()" type="button">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="py-3 ps-3 mx-auto mt-5 mb-2 text-center w-75">
+            <h1 class="display-4">Welcome <span id="userName"></span> ^_^</h1>
+            <p class="lead">You can choose your membership and enjoy the informations, virtual tours of historical sites
+                and
+                our offers</p>
+        </div>
+
+        <main>
+            <div class="container">
+                <div
+                    class="card mb-5 flex-wrap text-center d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <div class="card box-shadow flex-md-fill m-3">
+                        <div class="card-header">
+                            <h4 class=>Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">$0
+                                <small class="text-muted">/ mo</small>
+                            </h1>
+                            <img src="spactacle.png" alt="free" class="rounded img-fluid">
+                            <ul class="list-unstyled mt-2 mb-4">
+                                <li>10 users included</li>
+                                <li>5 minutes of each virtual tour</li>
+                                <li>Email support</li>
+                                <li>2 GB of storage</li>
+                            </ul>
+                            <button class="btn btn-lg btn-block btn-outline-primary">Dashboard</button>
+                        </div>
+                    </div>
+                    <div class="card box-shadow flex-md-fill m-3">
+                        <div class="card-header">
+                            <h4>Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">$15
+                                <small class="text-muted">/ mo</small>
+                            </h1>
+                            <img src="mona lisa.jpg" alt="pro" class="rounded img-fluid">
+                            <ul class="list-unstyled mt-2 mb-4">
+                                <li>20 users included</li>
+                                <li>10 minutes of each virtual tour</li>
+                                <li>Priority email support</li>
+                                <li>4 GB of storage</li>
+                            </ul>
+                            <button class="btn btn-lg btn-block btn-primary"> Get started </button>
+                        </div>
+                    </div>
+                    <div class="card box-shadow flex-md-fill m-3">
+                        <div class="card-header">
+                            <h4>Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">$29
+                                <small class="text-muted">/ mo</small>
+                            </h1>
+                            <img src="index-edit.jpg" alt="enterprise" class="rounded img-fluid">
+                            <ul class="list-unstyled mt-2 mb-4">
+                                <li>30 users included</li>
+                                <li>unlimited of each virtual tour</li>
+                                <li>Phone and email support</li>
+                                <li>8 GB of storage</li>
+                            </ul>
+                            <button class="btn btn-lg btn-block btn-primary"> Contact us </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="container">
+            <footer class="border-top border-shadow">
+                <div class="row my-5">
+                    <div class="col-12 col-md">
+                        <img src="flag.png" alt="flag" width="30" height="30" class="rounded">
+                        <small class="d-block my-2 text-muted">© 1995 - 2021</small>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Features</h5>
+                        <ul class=" list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Cool stuff</a></li>
+                            <li><a class="text-muted" href="#">Random feature</a></li>
+                            <li><a class="text-muted" href="#">Team feature</a></li>
+                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted" href="#">Another one</a></li>
+                            <li><a class="text-muted" href="#">Last time</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Resource</a></li>
+                            <li><a class="text-muted" href="#">Resource name</a></li>
+                            <li><a class="text-muted" href="#">Another resource</a></li>
+                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted" href="#">Final resource</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Team</a></li>
+                            <li><a class="text-muted" href="#">Locations</a></li>
+                            <li><a class="text-muted" href="#">Privacy</a></li>
+                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted" href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="MembershipJavascript.js"></script>
+</body>
+
+</html>

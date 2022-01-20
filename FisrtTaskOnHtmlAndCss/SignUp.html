@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <title>Sign Up Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            li {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            .cadre {
+                display: block;
+            }
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div style="font-weight: bold;" class="font">
+                <ul>
+                    <li><a href="SignUp.html"><img src="flag.png" class="home" alt="Home"></a></li>
+                    <li><a href="SignUp.html">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li class="dropdown"><a href="#" class="dropbtn">Historical Sites</a>
+                        <div class="dropdown-content">
+                            <a href="#">Musee du Louvre</a>
+                            <a href="#">The Eiffel Tower</a>
+                            <a href="#">Notre Dame Cathedral of Paris</a>
+                            <a href="#">The Catacombs of Paris</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="cadre row">
+            <div class="col-3">
+                <p></p>
+            </div>
+            <div class="paragraph font col-3">
+                <h2 style="font-weight: bold;" class="ph">How much do you know France?</h2>
+                <p id="para">
+                    The capital and by far the most important city of France is Paris, one of the world’s preeminent
+                    cultural
+                    and
+                    commercial centres. A majestic city known as the ville lumière, or “city of light”<span id="dots">
+                        ...
+                    </span><span id="more"> Paris has often been remade,
+                        most famously in the mid-19th century under the command of Georges-Eugène, Baron Haussman,
+                        who
+                        was
+                        committed
+                        to
+                        Napoleon III’s vision of a modern city free of the choleric swamps and congested alleys of
+                        old,
+                        with
+                        broad
+                        avenues and a regular plan.</span>
+                </p>
+                <button class="ticketBtn" type="button" onclick="ticketBtn();">France Ticket</button>
+            </div>
+
+            <form class="col-3">
+                <div class="registration font">
+                    <h2 style=" font-weight: bold;" class="ph2">Sign Up For Free</h2>
+                    <input type="text" placeholder=" First Name" id="fname" required>
+                    <input type="text" placeholder=" Last Name" id="lname" required>
+                    <input type="email" placeholder=" mail@example.com" id="email" required>
+                    <select name="country" id="country" required>
+                        <option value="null">Choose your country ...</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Germany">Germany</option>
+                        <option value="China">China</option>
+                    </select>
+                    <p>
+                        <button type="button" value="Sign Up" class="signUpBtn" onclick="signUp()">Sign Up</button>
+                    </p>
+                </div>
+            </form>
+            <div class="col-3"> </div>
+        </div>
+    </main>
+
+    <!-- <script type="module" src="../User.js"></script> -->
+    <script src="SignupJavascript.js"></script>
+
+</body>
+
+</html>

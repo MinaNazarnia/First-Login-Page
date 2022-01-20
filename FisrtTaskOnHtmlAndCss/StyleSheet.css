@@ -1,0 +1,260 @@
+/* #more {display: none;} */
+
+body{
+    background-image: url("C:/Users/Mina/Desktop/Html/FisrtTaskOnHtmlAndCss/luvre.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: auto;
+    margin: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div .font{
+    font-family: -webkit-pictograph;
+}
+
+ul{
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    /* display: flex; */
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    font-family: -webkit-pictograph;
+}
+
+li {
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+li .home{
+    width: 30px;
+    height: 30px;
+    
+}
+
+li a , .dropbtn{
+    color: #ddd;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+li a:hover,  .dropdown:hover .dropbtn{
+    background-color: #111;
+}
+
+li .dropdown{
+    display: inline-block;
+
+}
+
+li .dropdown-content{
+    background-color: #ddd;
+    z-index: 1;
+    box-shadow: 1px 1px 1px 1px black;
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    
+}
+
+li .dropdown-content a{
+    color: rgb(114, 112, 112);
+    text-decoration: none;
+    text-align: left;
+    padding: 5px 5px;
+    display: block;
+}
+
+li .dropdown-content a:hover{
+    display: block;
+    color: black;
+    background-color: #ddd;
+}
+
+li.dropdown:hover  .dropdown-content{
+    display: block;
+    
+}
+
+li a:active{
+    background-color: #ddd;
+}
+
+div .cadre{
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px black;
+    vertical-align: middle;
+    align-content: center;
+
+}
+
+div .paragraph{
+    display: block;
+    float: left;
+    align-content: center;  
+         
+}
+
+div .paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+div #para{
+    color: rgb(37, 35, 35);
+    align-items: center;
+    justify-self: center;
+    background-color: rgba(207, 195, 195, 0.5);
+    color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+
+}
+
+button.ticketBtn{
+    background-color: white;
+    color: #111;
+    padding: 10px 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    justify-content: center;
+    box-shadow: 0 1px 1px 0 #4CAF50;
+    
+}
+
+button.ticketBtn:hover{
+    background-color: #4CAF50;
+    color: white;
+    
+}
+
+button.ticketBtn:focus{
+    background-color: #337535;
+    color: white;
+    border: 1px solid #337535;
+    
+}
+
+div .registration{
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    line-height: 45px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+div .registration{
+    justify-content: center;
+    display: block;
+    text-align: -webkit-center;   
+
+}
+
+div .ph2{
+    color: black;
+    justify-content: center;
+    font-weight: bold;
+    /* width: 70%; */
+    text-align: center;
+    text-transform: none;
+    -webkit-text-stroke-width: thin;
+    /* width: max-content; */
+    
+}
+
+div .ph{
+    background-color: rgba(207, 195, 195, 0.5);
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: black;
+    justify-content: center;
+    font-weight: bold;
+    /* width: 70%; */
+    text-align: center;
+    text-transform: none;
+    -webkit-text-stroke-width: thin;
+    /* width: max-content; */
+}
+
+input{
+    /* width: 70%; */
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    border-style: none;
+    line-height: 32px;
+    justify-content: center;
+    font-family: -webkit-pictograph;
+    font-weight: bold;
+    flex-direction: column;
+
+}
+
+select{
+    height: 35px;
+    border-radius: 5px;
+
+}
+
+input:focus ,select{
+    background-color: whitesmoke;
+    border: 2px solid #008CBA;
+    /* width: 70%; */
+    line-height: 35px;
+    outline: none;
+
+}
+
+button.signUpBtn{
+    background-color: white;
+    color: #008CBA;
+    border: 1px #008CBA;
+    border-radius: 5px;
+    padding: 10px 10px;
+    justify-content: center;
+    box-shadow: 0 0 1px 0 #008CBA;
+    line-height: 22px;
+    flex-direction: column;
+    display: block;
+    
+}
+
+button.signUpBtn:hover{
+    background-color: #008CBA;
+    color: white;
+
+}
+
+button.signUpBtn:focus{
+    background-color: #025c7a;
+    color: white;
+    border: 1px #025c7a;
+}
+
+div.footer {
+   clear: both !important;
+   content: " ";
+   position: relative;
+   /* bottom: 0;
+   width: 100%; */
+   color: black;
+   text-align: center;
+   justify-content: center;
+    flex-direction: column;
+}
